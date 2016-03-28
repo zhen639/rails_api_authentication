@@ -7,6 +7,7 @@ gem 'pg'
 gem 'active_model_serializers', '~> 0.10.0.rc1'
 gem 'devise_token_auth'
 gem 'devise', '~> 4.0.0.rc1'
+
 # Use Puma as the app server
 gem 'puma'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
