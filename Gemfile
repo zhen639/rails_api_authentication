@@ -1,4 +1,5 @@
-source 'https://ruby.taobao.org/'
+# source 'https://ruby.taobao.org/'
+source 'https://rubygems.org/'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '>= 5.0.0.beta3', '< 5.1'
@@ -22,6 +23,20 @@ gem 'puma'
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 # gem 'rack-cors'
+
+gem 'activeadmin', '~> 1.0.0.pre2'
+gem 'rspec-rails', '>= 3.5.0.beta1'
+gem 'ransack',    github: 'activerecord-hackery/ransack'
+gem 'kaminari',   github: 'amatsuda/kaminari', branch: '0-17-stable'
+gem 'formtastic', github: 'justinfrench/formtastic'
+gem 'draper',     github: 'audionerd/draper', branch: 'rails5', ref: 'e816e0e587'
+# To fix a Draper deprecation error
+gem 'activemodel-serializers-xml', github: 'rails/activemodel-serializers-xml'
+# Optional -- only if you already include these gems
+gem 'rack-mini-profiler',          github: 'MiniProfiler/rack-mini-profiler'
+gem 'database_cleaner', '~> 1.5.0'
+# Only for JRuby:
+gem 'activerecord-jdbc-adapter',   github: 'jruby/activerecord-jdbc-adapter', platforms: :jruby
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
